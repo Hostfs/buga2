@@ -48,8 +48,8 @@ const VATCalculator = () => {
         const vat = supply * 0.1;
         const total = supply + vat;
         return [
-            { label: '부가가치세 (10%)', value: `${formatNumber(vat)} 원` },
-            { label: '총 금액', value: `${formatNumber(total)} 원` },
+            { label: '부가가치세 (10%)', value: `￦ ${formatNumber(vat)} 원` },
+            { label: '총 금액', value: `￦ ${formatNumber(total)} 원` },
         ];
     };
 
@@ -58,8 +58,8 @@ const VATCalculator = () => {
         const supply = total / 1.1;
         const vat = total - supply;
         return [
-            { label: '공급가액', value: `${formatNumber(supply)} 원` },
-            { label: '부가가치세 (10%)', value: `${formatNumber(vat)} 원` },
+            { label: '공급가액', value: `￦ ${formatNumber(supply)} 원` },
+            { label: '부가가치세 (10%)', value: `￦ ${formatNumber(vat)} 원` },
         ];
     };
 
