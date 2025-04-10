@@ -1,5 +1,17 @@
 // ../styles/styles.js
 
+// Rainbow 애니메이션 정의
+const rainbowAnimation = {
+    '0%': { color: 'red' },
+    '14%': { color: 'orange' },
+    '28%': { color: 'yellow' },
+    '42%': { color: 'green' },
+    '57%': { color: 'blue' },
+    '71%': { color: 'indigo' },
+    '85%': { color: 'violet' },
+    '100%': { color: 'red' }
+};
+
 // Page container - holds everything
 export const pageContainer = {
     display: 'flex',
@@ -39,6 +51,15 @@ export const h2 = {
     marginTop: '0',
     marginBottom: '15px',
     color: '#202124'
+};
+
+// Rainbow text styling for <rain> tag
+export const rain = {
+    display: 'block',
+    textAlign: 'center',
+    animation: 'rainbow 2s infinite',
+    fontSize: '18px',
+    marginBottom: '20px'
 };
 
 // Form container
@@ -94,4 +115,9 @@ export const author = {
     fontSize: '14px',
     color: '#5f6368',
     fontStyle: 'normal',
+};
+
+// 애니메이션 정의 (별도로 export하지 않음)
+export const keyframes = {
+    rainbow: rainbowAnimation
 };
